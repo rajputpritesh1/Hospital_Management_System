@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../stylesheet/doctor-form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Employee Dashboard | Doctors </title>
+</head>
+
+<body>
+  <div class="container" id="content">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="./../employee dashboard/employee_dashboard.html">
+            <i class="fas fa-clinic-medical"></i>
+            <div class="title">CT Hospital</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/employee_dashboard.html">
+            <i class="fa-solid fa-house-medical"></i>
+            <div class="title">Dashboard</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="./../employee dashboard/doctors.html" class="active">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="title">Doctors</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/patients.html">
+            <i class="fa-solid fa-bed-pulse"></i>
+            <div class="title">Patient</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/appointments.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div class="title">Appointments</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/reports.html">
+            <i class="fa-solid fa-notes-medical"></i>
+            <div class="title">Reports</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/wards.html">
+            <i class="fa-solid fa-bed-pulse"></i></i>
+            <div class="title">Ward</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/profile.html">
+            <i class="fa-solid fa-user"></i>
+            <div class="title">Profile</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../logout.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <div class="title">Logout</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <span class="position">Employee Dashboard <i class="fa-solid fa-caret-right"></i> Doctors <i class="fa-solid fa-caret-right"></i> Add Doctor</span>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <a href="./../employee dashboard/profile.html"><img src="./../Images/user.png" alt="profile-image"></a>
+        </div>
+      </div>
+      <div class="form-container">
+        <h2>Add Doctor</h2>
+        <div class="form">
+          <div>
+            <label>Full Name:
+              <input type="text" required>
+            </label>
+          </div>
+          <div>
+            <label>License No.
+              <input type="text" required>
+            </label>
+          </div>
+          <div>
+            <label>Email ID
+              <input type="email" required>
+            </label>
+          </div>
+          <div>
+            <label>Password
+              <input type="password" required>
+            </label>
+          </div>
+          <div>
+            <label>Confirm Password
+              <input type="password" required>
+            </label>
+          </div>
+          <div>
+            <label>Adhar No.
+              <input type="number" required>
+            </label>
+          </div>
+          <div>
+            <label>Phone No.
+              <input type="number" required>
+            </label>
+          </div>
+          <div>
+            <label>Specialization
+              <select>
+                <option value="dental">Dental</option>
+                <option value="mental">Mental</option>
+                <option value="mental">Mental</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label >Avtar
+              <input type="file">
+            </label>
+          </div>
+          <div class="place">
+            <label>Country
+              <input type="text">
+            </label>
+          </div>
+          <div>
+            <label>City
+              <input type="text">
+            </label>
+          </div>
+          <div>
+            <label>State
+              <input type="text">
+            </label>
+          </div>
+          <div>
+            <label>Pin Code
+              <input type="number">
+            </label>
+          </div> <br>
+
+          <div class="submit-btn">
+            <input class="submit" type="submit" value="Submit">
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

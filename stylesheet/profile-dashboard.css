@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.active {
+  color: rgb(2, 128, 59);
+}
+
+.pending {
+  color: #ffd900;
+}
+
+.rejected {
+  color: red;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: rgba(4, 95, 117, 0.801);
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.sidebar ul li {
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar ul li:hover {
+  background: #444;
+  transition: all 0.4s ease;
+}
+
+.sidebar ul li a.active {
+  background: #444;
+}
+
+.sidebar ul li:first-child {
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+.sidebar ul li:first-child:hover {
+  background: none;
+}
+
+.sidebar ul li a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  min-width: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sidebar .title {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  min-height: 100vh;
+  left: 250px;
+  background: #f5f5f5;
+}
+
+.top-bar {
+  position: fixed;
+  height: 60px;
+  width: calc(100% - 300px);
+  background: #fff;
+  display: grid;
+  grid-template-columns: 10fr 0.4fr 1fr;
+  grid-gap: 5px;
+  align-items: center;
+  color: #444;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-bar .search {
+  position: relative;
+  max-width: 400px;
+}
+.top-bar .search span{
+  font-weight: bolder;
+}
+
+
+.user {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.user img{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(2, 128, 59);
+  border-radius: 10rem;
+}
+
+.profile-container{
+  width: 64rem;
+  height: 45rem;
+}
+
+.profile-container img{
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(2, 128, 59);
+  border-radius: 10rem;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  border: #444 1px solid;
+  width: 70vw;
+}
+.profile .photo{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  font-size:large;
+  font-weight: bold;
+}
+.photo input{
+  display: none;
+}
+.profile .photo i:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.profile .name{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: .5rem;
+}
+.profile .name input{
+  padding: .4rem;
+  outline: none;
+  border-radius: .3rem;
+  width: 8rem;
+}
+.profile .email input{
+  padding: .4rem;
+  width: 18rem;
+  outline: none;
+  border-radius: .3rem;
+}
+.profile .contact input{
+  padding: .5rem;
+  outline: none;
+  border-radius: .3rem;
+  width: 18rem;
+}
+.profile .address input{
+  padding: .5rem;
+  outline: none;
+  border-radius: .3rem;
+  width: 18rem;
+}
+.profile .password input{
+  padding: .5rem;
+  outline: none;
+  border-radius: .3rem;
+  width: 18rem;
+}
+.profile .save a{
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: large;
+  border: 2px solid rgb(2, 128, 59);
+  padding: .5rem;
+  border-radius: .3rem;
+  color: #444;
+  transition: ease 300ms all;
+}
+.profile .save a:hover{
+  transition: ease 300ms all;
+  background: rgb(2, 128, 59);
+  color: #fff;
+}
+
+.tables {
+  margin: 5rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  align-items: self-start;
+  padding: 0 20px 20px 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.img-box-small {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.appoinments {
+  overflow: scroll;
+}
+
+.upcoming-appointments,
+.doctor-visiting {
+  min-height: 350px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.upcoming-appointments table tbody td:last-child {
+  white-space: nowrap;
+}
+
+.fa-edit {
+  background: #63b4f4;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  background: #ed5564;
+  cursor: pointer;
+}
+
+
+
+/* Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 10rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #70d4aa;
+  border-radius: 10rem;
+}
+
+/* employee */
+.tables::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.tables::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 10rem;
+}
+
+.tables::-webkit-scrollbar-thumb {
+  background-color: #09a5b9;
+  border-radius: 10rem;
+}
+
+/*  Responsive */
+
+@media (max-width: 1090px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .main {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+
+  .top-bar {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 860px) {
+  .tables {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 760px) {
+  .tables {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+  .card{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .upcoming-appointments td:nth-child(3) {
+    display: none;
+  }
+
+  .appoinments {
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: start;
+    margin-left: 0rem;
+  }
+
+  .profile .name{
+    gap: .5rem;
+  }
+  .profile .email input{
+    width: 12rem;
+  }
+  .profile .contact input{
+    width: 12rem;
+  }
+  .profile .address input{
+    width: 12rem;
+  }
+  .profile .password input{
+    width: 12rem;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  .upcoming-appointments,
+  .doctor-visiting {
+    font-size: 70%;
+    padding: 10px;
+    min-height: 200px;
+  }
+
+  .tables {
+    padding: 10px;
+  }
+
+  .search input {
+    padding: 0 10px;
+  }
+
+  .user {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile .name{
+    gap: .5rem;
+    flex-direction: column;
+  }
+  .profile .name input{
+    width: 12rem;
+  }
+  .profile .email input{
+    width: 12rem;
+  }
+  .profile .contact input{
+    width: 12rem;
+  }
+  .profile .address input{
+    width: 12rem;
+  }
+  .profile .password input{
+    width: 12rem;
+  }
+}

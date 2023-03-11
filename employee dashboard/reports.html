@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../stylesheet/reports-dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Employee Dashboard | Reports </title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="./../admin dashboard/admin_dashboard.html">
+            <i class="fas fa-clinic-medical"></i>
+            <div class="title">CT Hospital</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/employee_dashboard.html">
+            <i class="fa-solid fa-house-medical"></i>
+            <div class="title">Dashboard</div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="./../employee dashboard/doctors.html" >
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="title">Doctors</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/patients.html" >
+            <i class="fa-solid fa-bed-pulse"></i>
+            <div class="title">Patient</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/appointments.html" >
+            <i class="fa-solid fa-calendar-check"></i>
+            <div class="title">Appointments</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/reports.html" class="active">
+            <i class="fa-solid fa-notes-medical"></i>
+            <div class="title">Reports</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/wards.html">
+            <i class="fa-solid fa-bed-pulse"></i></i>
+            <div class="title">Ward</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../employee dashboard/profile.html">
+            <i class="fa-solid fa-user"></i>
+            <div class="title">Profile</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../logout.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <div class="title">Logout</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <span class="position">Employee Dashboard <i class="fa-solid fa-caret-right"></i> Reports</span>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <a href="./../employee dashboard/profile.html"><img src="./../Images/user.png" alt="profile-image"></a>
+        </div>
+      </div>
+      <div class="add-btn">
+        <h1>Report List</h1>
+        <a href="./../forms_employee_dashboard/add-report.html"><i class="fa-solid fa-circle-plus"></i> Add Report</i></a>
+    </div>  
+      <div class="tables">
+        <div class="upcoming-appointments">
+          <table class="appointments">
+            <thead>
+              <td>Sr <br>No.</td>
+              <td>Appointment ID</td>
+              <td>Patient Name</td>
+              <td>Age</td>
+              <td>Doctor <br>Name</td>
+              <td>Department</td>
+              <td>Appointment <br>Date</td>
+              <td>Appointment <br>Time</td>
+              <td>End <br>Time</td>
+              <td>Status</td>
+              <td>Action</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="completed">Completed</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>01:00</td>
+                <td>01:35</td>
+                <td class="active">Active</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>02:00</td>
+                <td>02:30</td>
+                <td class="inactive">Inactive</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>02:45</td>
+                <td>03:15</td>
+                <td class="inactive">Inactive</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="completed">Completed</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>06</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="completed">Completed</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>07</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="inactive">Inactive</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>08</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="active">Active</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>09</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="active">Active</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="inactive">Inactive</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="inactive">Inactive</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>CTHMS0876541</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>Minarul <br>Hoque</td>
+                <td>Dental</td>
+                <td>15-07-22</td>
+                <td>12:00</td>
+                <td>12:45</td>
+                <td class="completed">Completed</td>
+                <td>
+                  <a href="./../Images/admin.png" download="Report"><i class="fa-solid fa-download"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../stylesheet/doctors_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Doctor Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="./../doctor dashboard/doctors_dashboard.html">
+            <i class="fas fa-clinic-medical"></i>
+            <div class="title">CT Hospital</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../doctor dashboard/doctors_dashboard.html" class="active">
+            <i class="fa-solid fa-house-medical"></i>
+            <div class="title">Dashboard</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../doctor dashboard/patients.html">
+            <i class="fa-solid fa-bed-pulse"></i>
+            <div class="title">Patient</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../doctor dashboard/appointments.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div class="title">Appointments</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../doctor dashboard/profile.html">
+            <i class="fa-solid fa-user"></i>
+            <div class="title">Profile</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../logout.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <div class="title">Logout</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <span class="position"><i class="fa-solid fa-caret-right"></i> Doctor Dashboard</span>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <a href="./../doctor dashboard/profile.html"><img src="./../Images/doctor.png" alt="profile-image"></a>
+        </div>
+      </div>
+      <div class="tables">
+        <div class="upcoming-appointments">
+          <div class="heading">
+            <h2>Upcoming Appointments</h2>
+            <a href="./../doctor dashboard/appointments.html" class="btn">View All</a>
+          </div>
+          <table class="appointments">
+            <thead>
+              <td>Name</td>
+              <td>Appointment With</td>
+              <td>Condition</td>
+              <td>Actions</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Liam Smith Doe</td>
+                <td>Dr. Benjamin</td>
+                <td>fracture</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Emma</td>
+                <td>Dr. Noah</td>
+                <td>depression</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Olivia Smith </td>
+                <td>Dr. Liam</td>
+                <td>arthritis</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Isabella Doe</td>
+                <td>Dr. Noah</td>
+                <td>flu</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Sophia Smith </td>
+                <td>Dr. Olivia</td>
+                <td>fracture</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Liam Smith Doe</td>
+                <td>Dr. Benjamin</td>
+                <td>fracture</td>
+                <td>
+                  <i class="fa-solid fa-handshake" title="Take Up"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="doctor-visiting">
+          <div class="heading">
+            <h2>Patients</h2>
+            <a href="./../doctor dashboard/patients.html" class="btn">View All</a>
+          </div>
+          <table class="visiting">
+            <thead>
+              <td>Photo</td>
+              <td>Name</td>
+              <td>Mobile no.</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="./../Images/user.png" alt="">
+                  </div>
+                </td>
+                <td>Benjamin</td>
+                <td>8544685939</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="./../Images/user.png" alt="">
+                  </div>
+                </td>
+                <td>Liam</td>
+                <td>8544685939</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="./../Images/user.png" alt="">
+                  </div>
+                </td>
+                <td>Noah</td>
+                <td>8544685939</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

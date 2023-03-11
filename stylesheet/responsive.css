@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+
+  body{
+    overflow: scroll;
+  }
+  .login_container{
+    flex-direction: column;
+  }
+  .about{
+    font-size: 12px;
+  }
+}
+
+
+/* ************************************************** */
+
+@media only screen and (min-width: 600px) {
+  body{
+    overflow: hidden;
+    height: 100vh;
+  }
+  .login_container{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+  }
+  .login_panel{
+    margin-top: -150px;
+  }
+  .about{
+    font-size: 15px;
+  }
+}
+
+
+/* ********************************************************** */
+@media screen and (min-device-width: 701px)  and (max-device-width: 1200px){ 
+  body{
+    overflow: hidden;
+    height: 100vh;
+  }
+  .login_container{
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  }
+  .footer{
+    display: none;
+  }
+}

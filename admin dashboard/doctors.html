@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../stylesheet/doctor-dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Admin Dashboard | Doctor</title>
+</head>
+
+<body>
+  <div class="container" id="content">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="./../admin dashboard/admin_dashboard.html">
+            <i class="fas fa-clinic-medical"></i>
+            <div class="title">CT Hospital</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/admin_dashboard.html">
+            <i class="fa-solid fa-house-medical"></i>
+            <div class="title">Dashboard</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/employees.html">
+            <i class="fa-solid fa-hospital-user"></i>
+            <div class="title">Employee</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/doctors.html" class="active">
+            <i class="fa-solid fa-user-doctor" ></i>
+            <div class="title">Doctors</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/patients.html">
+            <i class="fa-solid fa-bed-pulse"></i>
+            <div class="title">Patient</div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="./../admin dashboard/appointment.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div class="title">Appointments</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/reports.html">
+            <i class="fa-solid fa-notes-medical"></i>
+            <div class="title">Reports</div>
+          </a>
+        </li>
+        <li>
+          <a href="././ward.html">
+            <i class="fa-solid fa-bed-pulse"></i></i>
+            <div class="title">Ward</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../admin dashboard/profile.html">
+            <i class="fa-solid fa-user"></i>
+            <div class="title">Profile</div>
+          </a>
+        </li>
+        <li>
+          <a href="./../logout.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <div class="title">Logout</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Doctors</span>
+        </div>
+        <i class="fas fa-bell"></i> 
+        <div class="user">
+          <a href="./../admin dashboard/profile.html"><img src="./../Images/user.png" alt="profile-image"></a>
+        </div>
+      </div>
+      <div class="add-btn">
+        <h1>Doctors Liast</h1>
+        <a href="./../forms/add-doctor.html"><i class="fa-solid fa-circle-plus"></i> Add Doctor</a>
+    </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <img src="./../Images/doctor.png" alt="doctor">
+          </div>
+          <div class="detail-box">
+            <span class="name">Minarul Hoque</span>
+            <span class="dept">Dental</span>
+          </div>
+          <div class="location">
+            <span><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal</span>
+          </div>
+          <div class="rating">
+            <span class="rate">4/5</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+          <div class="action">
+            <i class="fa-solid fa-trash-can" title="Delete"></i>
+            <i class="fa-solid fa-pen-to-square" title="Edit"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./../Images/doctor.png" alt="doctor">
+          </div>
+          <div class="detail-box">
+            <span class="name">Pritesh Bhardwaj</span>
+            <span class="dept">Mental</span>
+          </div>
+          <div class="location">
+            <span><i class="fa-solid fa-location-dot"></i> Motihari, Bihar</span>
+          </div>
+          <div class="rating">
+            <span class="rate">4/5</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+          <div class="action">
+            <i class="fa-solid fa-trash-can" title="Delete"></i>
+            <i class="fa-solid fa-pen-to-square" title="Edit"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./../Images/doctor.png" alt="doctor">
+          </div>
+          <div class="detail-box">
+            <span class="name">Arpan Mondal</span>
+            <span class="dept">Orthopedics</span>
+          </div>
+          <div class="location">
+            <span><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal</span>
+          </div>
+          <div class="rating">
+            <span class="rate">4/5</span>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+          <div class="action">
+            <i class="fa-solid fa-trash-can" title="Delete"></i>
+            <i class="fa-solid fa-pen-to-square" title="Edit"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
