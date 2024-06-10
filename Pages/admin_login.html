@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head> 
   <meta charset="UTF-8">
@@ -22,14 +22,14 @@
       </div>
       <span class="title">Admin</span>
 
-      <form action="#" class="login">
+      <form action="./../php/admin_auth.php" method="post" class="login">
         <label for="username">
-          <input type="text" class="username">
+          <input type="text" required class="username" name="username" placeholder="username">
         </label>
         <label for="password">
-          <input type="password" class="password">
+          <input type="password" required class="password" name="password" placeholder="password">
         </label>
-        <a href="./../admin dashboard/admin_dashboard.html"><input class="login_btn" type="button" value="Login"></a>
+        <input class="login_btn" type="submit" name="submit" value="Login">
       </form>
     </div>
   </div>
