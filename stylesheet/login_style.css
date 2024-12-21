@@ -69,6 +69,8 @@ body {
   cursor: pointer;
   transition: ease-in-out 0.5s;
   margin-top: 25px;
+  text-decoration: none;
+  color: #fff;
 }
 .login_btn:hover {
   background: rgb(0, 82, 50);
